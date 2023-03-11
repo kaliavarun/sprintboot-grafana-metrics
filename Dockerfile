@@ -1,5 +1,5 @@
 # Use OpenJDK 17 Alpine image as the base image
-FROM openjdk:17-alpine3.15
+FROM openjdk:17-oracle
 
 # Set the working directory to /app
 WORKDIR /app
