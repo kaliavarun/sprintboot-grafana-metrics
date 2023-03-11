@@ -1,10 +1,3 @@
-#Build stage
-FROM gradle:latest AS BUILD
-WORKDIR /usr/app/
-COPY . .
-RUN gradle build
-
-
 #Run stage
 # Use OpenJDK 17 Alpine image as the base image
 FROM openjdk:17-oracle
