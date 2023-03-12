@@ -10,5 +10,10 @@ docker build -t springboot/springboot-grafana-metrics -f Dockerfile .
 
 ### Run docker container
 ```
-docker run springboot/springboot-grafana-metrics
+docker run -p 8080:8080 -d springboot/springboot-grafana-metrics
+```
+
+### Access
+```
+curl http://localhost:8080/memory
 ```
