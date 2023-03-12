@@ -7,7 +7,7 @@ docker run -d \
   -e "GF_INSTALL_PLUGINS=https://storage.googleapis.com/plugins-community/grafana-simple-json-datasource/release/1.4.2/grafana-simple-json-datasource-1.4.2.zip" \
   grafana/grafana-enterprise \
 
-#start metrics server
+#Start metrics server
 docker run -p 8080:8080 -d \
   springboot/springboot-grafana-metrics \
   --name=metrics
