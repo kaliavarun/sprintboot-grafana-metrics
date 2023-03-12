@@ -2,6 +2,6 @@
 
 #Start grafana
 # shellcheck disable=SC2046
-docker kill $(docker container ls -aq)
-docker rm $(docker ps -aq)
+docker kill $(docker container ls -aq) || true
+docker rm $(docker ps -aq) || true
 
